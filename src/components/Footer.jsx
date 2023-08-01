@@ -3,15 +3,15 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className={'border-t mt-10 py-10 px-2'}>
-            <div className={'flex flex-row gap-10 mr-4 ml-4 justify-between'}>
-                <div className={''}>
+            <div className={'md:flex'}>
+                <div className={'w-full mb-5 md:w-2/5'}>
                     <h6 className={'font-semibold text-center text-gray-700 mb-3'}>Company</h6>
                     <ul className={'flex flex-row gap-4'}>
                         <li><a className={'footer-link'} href="#">Team</a></li>
                         <li><a className={'footer-link'} href="#">About us</a></li>
                     </ul>
                 </div>
-                <div>
+                <div className={'w-full mb-5 md:w-2/5'}>
                     <h6 className={'font-semibold text-center text-gray-700 mb-3'}>Content</h6>
                     <ul className={'flex flex-row gap-4'}>
                         <li><a
@@ -26,7 +26,7 @@ const Footer = () => {
                             href="#">Documentation</a></li>
                     </ul>
                 </div>
-                <div>
+                <div className={'w-full mb-5 md:w-1/5'}>
                     <h6 className={'font-semibold text-center text-gray-700 mb-3'}>Contact Us</h6>
                     <ul className={'flex flex-row gap-4'}>
                         <li><a

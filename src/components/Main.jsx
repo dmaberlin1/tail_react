@@ -4,6 +4,7 @@ import PostCards from "./PostCards";
 import MainMenu from "./MainMenu";
 import Banner from "./Banner";
 import Topics from "./Topics";
+import Pagination from "./Pagination";
 
 const Main = () => {
     return (
@@ -23,6 +24,7 @@ const Main = () => {
                             <FormSubscribe/>
                         </div>
                     </div>
+                    <Pagination/>
                 </div>
             </>
         </main>
