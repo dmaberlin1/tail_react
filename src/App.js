@@ -1,17 +1,20 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import FormSubscribe from "./components/FormSubscribe";
-import PostCards from "./components/PostCards";
+import Pagination from "./components/Pagination";
+import React from "react";
 
 function App() {
     return (
         <>
+            <div className="max-w-screen-xl mx-auto">
+
+
             <Header/>
             <Main/>
-            <PostCards/>
-            <FormSubscribe/>
+            <Pagination/>
             <Footer/>
+            </div>
         </>
     );
 }

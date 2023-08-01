@@ -24,6 +24,15 @@ body{
     @apply text-gray-900 bg-gray-100 rounded-sm
 }
 
+@layer components{
 .footer-link{
-    @apply inline-block text-gray-500 py-2  hover:underline underline-offset-4 decoration-2 decoration-emerald-300 decoration-double
+    @apply inline-block text-gray-500 py-2  hover:underline underline-offset-4 decoration-2 decoration-emerald-300 decoration-double p-1
+}
+}
+
+.footer-link-icons{
+    @apply hover:bg-gray-200 hover:rounded-3xl
+}
+.svg-custom{
+    @apply w-6 h-6 stroke-emerald-400
 }
