@@ -9,7 +9,6 @@ import Pagination from "./Pagination";
 const Main = () => {
     return (
         <main className={'lg:flex'}>
-            <>
                 <div className={'w-full lg:flex flex-col'}>
                     <MainMenu/>
                     <Banner/>
@@ -24,7 +23,6 @@ const Main = () => {
                     </div>
                     <Pagination/>
                 </div>
-            </>
         </main>
     );
 };

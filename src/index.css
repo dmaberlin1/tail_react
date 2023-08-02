@@ -1,22 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;700&display=swap');
 
 body{
-    margin-left: 5px;
+    /*margin-left: 5px;*/
+}
+
+.dark {
+    @apply bg-gray-800 text-zinc-50
 }
 
 .header-link{
-    @apply text-gray-500 font-semibold inline-block py-3 px-2 hover:text-emerald-600 border-b-2 focus:outline-none focus:ring-2 focus:ring-emerald-300 border-transparent hover:border-emerald-600
+    @apply dark:text-slate-200
+    text-gray-500 font-semibold inline-block py-3 px-2 hover:text-emerald-600 border-b-2 focus:outline-none focus:ring-1 focus:ring-emerald-300 border-transparent hover:border-emerald-600 transition-all duration-300
 }
 
 .header-auth{
-    @apply shadow-md shadow-emerald-200 p-1 px-3 border-2 rounded-full focus:outline-none focus:ring-2 focus:ring-emerald-300 border-emerald-500 text-emerald-600 hover:text-white hover:bg-emerald-600
+    @apply shadow-md shadow-emerald-200 p-1 px-3 border-2 rounded-full focus:outline-none focus:ring-2 focus:ring-emerald-300 border-emerald-500 text-emerald-600 hover:text-white hover:bg-emerald-600 transition-all duration-300
+    dark:shadow-emerald-600 dark:hover:bg-emerald-900 dark:hover:text-slate-300
 }
 @layer components {
     .pagination-item{
-        @apply inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700
+        @apply dark:text-slate-300 dark:bg-gray-600 dark:border-gray-400 inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all delay-100
+        dark:hover:text-slate-100 dark:hover:bg-gray-800
     }
 }
 
@@ -26,12 +33,12 @@ body{
 
 @layer components{
 .footer-link{
-    @apply inline-block text-gray-500 py-2  hover:underline underline-offset-4 decoration-2 decoration-emerald-300 decoration-double p-1
+    @apply inline-block text-gray-500 py-2  hover:underline underline-offset-4 decoration-2 decoration-emerald-300 decoration-double p-1 transition-all
 }
 }
 
 .footer-link-icons{
-    @apply hover:bg-gray-200 hover:rounded-3xl
+    @apply hover:bg-gray-200 hover:rounded-3xl transition-all
 }
 .svg-custom{
     @apply w-6 h-6 stroke-emerald-400
