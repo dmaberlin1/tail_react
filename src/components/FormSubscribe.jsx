@@ -3,8 +3,8 @@ import React from 'react';
 const FormSubscribe = () => {
     return (
         <>
-            <div className="border border-dotted"></div>
-        <div className={'my-5'}>
+            <div className="border border-dotted md:hidden lg:block"></div>
+        <div className={'my-5 md:my-0 lg:my-y'}>
             <h5 className={'font-bold text-lg text-gray-700 uppercase mb-2'}>Subscribe</h5>
             <p className={'text-gray-600 mb-4'}>Subscribe to our newsletter</p>
             <input className={'text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600'}

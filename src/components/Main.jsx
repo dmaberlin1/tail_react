@@ -8,20 +8,18 @@ import Pagination from "./Pagination";
 
 const Main = () => {
     return (
-        <main className={'flex'}>
+        <main className={'lg:flex'}>
             <>
-
-
-                <div className={'flex flex-col'}>
+                <div className={'w-full lg:flex flex-col'}>
                     <MainMenu/>
                     <Banner/>
-                    <div className={'flex flex-row'}>
-                        <div className={'w-2/3'}>
+                    <div className={'w-full lg:flex flex-row'}>
+                        <div className={'w-full lg:w-2/3'}>
                             <PostCards/>
                         </div>
-                        <div  className={'w-1/3 flex flex-col justify-center px-2'}>
-                            <Topics/>
-                            <FormSubscribe/>
+                        <div  className={'w-full md:w-1/3 md:flex md:space-x-6 lg:block lg:space-x-0 flex-col justify-center px-2'}>
+                            <div className={'w-full md:w-1/2 lg:w-full'}><Topics/></div>
+                            <div className={'w-full md:w-1/2 lg:w-full'}><FormSubscribe/></div>
                         </div>
                     </div>
                     <Pagination/>
